@@ -26,7 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3233573802858574983}
   - {fileID: 692603549750788087}
@@ -126,6 +126,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3233573801575612102}
     m_Modifications:
+    - target: {fileID: 936083254383847322, guid: d94e5cecb40a94ef8a09d431ea97fcde, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5358177653503592141, guid: d94e5cecb40a94ef8a09d431ea97fcde, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7978443854586988036, guid: d94e5cecb40a94ef8a09d431ea97fcde, type: 3}
       propertyPath: m_Name
       value: CarBox
@@ -172,6 +180,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7978443854586988037, guid: d94e5cecb40a94ef8a09d431ea97fcde, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978443854832290799, guid: d94e5cecb40a94ef8a09d431ea97fcde, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
