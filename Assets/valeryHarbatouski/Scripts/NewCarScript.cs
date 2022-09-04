@@ -1,58 +1,62 @@
 using UnityEngine;
 using TMPro;
 
-public class NewCarScript : MonoBehaviour
-    
+namespace valeryHarbatouski
 {
-    [SerializeField] private WheelCollider[] _wheels;
 
-    [SerializeField] private float maxMotorTorque = 10f;
-    [SerializeField] private float maxSteeringAngle = 10f;
-    [SerializeField] private Transform _centerOfMass;
-
-    public TextMeshProUGUI coinsText;
-    private int coinsCounter = 0;
-    private GameObject coin;
+    public class NewCarScript : MonoBehaviour
 
 
-    private Rigidbody _rigidbody;
-
-    void Start()
     {
-        _rigidbody = GetComponent<Rigidbody>();
-        _rigidbody.centerOfMass = _centerOfMass.position;
-        coinsText.text = "0";
-        gameObject.tag = "coin";
-    }
+        [SerializeField] private WheelCollider[] _wheels;
+
+        [SerializeField] private float maxMotorTorque = 10f;
+        [SerializeField] private float maxSteeringAngle = 10f;
+        [SerializeField] private Transform _centerOfMass;
+
+        public TextMeshProUGUI coinsText;
+        private int coinsCounter = 0;
 
 
-    void FixedUpdate()
-    {
-        for (int i = 0; i <_wheels.Length; i++)
+        private Rigidbody _rigidbody;
+
+        void Start()
         {
-            var wheel = _wheels[i];
-            wheel.motorTorque = Input.GetAxis("Vertical") * maxMotorTorque;
-            wheel.steerAngle = Input.GetAxis("Horizontal") * maxSteeringAngle;
+            _rigidbody = GetComponent<Rigidbody>();
+            _rigidbody.centerOfMass = _centerOfMass.position;
+            coinsText.text = "0";
+        }
 
-            if (Input.GetKey(KeyCode.Space) == true)
+        void FixedUpdate()
+        {
+            for (int i = 0; i < _wheels.Length; i++)
             {
-                wheel.brakeTorque = Mathf.Pow(maxMotorTorque, 3);
-                
-            }
+                var wheel = _wheels[i];
+                wheel.motorTorque = Input.GetAxis("Vertical") * maxMotorTorque;
+                wheel.steerAngle = Input.GetAxis("Horizontal") * maxSteeringAngle;
 
-            else
-            {
-                wheel.brakeTorque = 0;
+                if (Input.GetKey(KeyCode.Space) == true)
+                {
+                    wheel.brakeTorque = Mathf.Pow(maxMotorTorque, 3);
+                }
+
+                else
+                {
+                    wheel.brakeTorque = 0;
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        coinsCounter = coinsCounter + 5;
-        coinsText.text = coinsCounter.ToString();
-        Debug.Log("collected");
-        
+        private void OnTriggerEnter(Collider other)
+        {
+            coinsCounter = coinsCounter + 5;
+            Debug.Log("counter = " + coinsCounter);
 
+            coinsText.text = coinsCounter.ToString();
+            Debug.Log("Coin collected");
+
+            Destroy(other.gameObject);
+            Debug.Log("GameObject Destroyed");
+        }
     }
 }

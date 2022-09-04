@@ -1,26 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorChanger : MonoBehaviour
+namespace valeryHarbatouski
 {
-    private Renderer _render;
-
-    void Start()
+    public class ColorChanger : MonoBehaviour
     {
-        _render = GetComponent<Renderer>();
+        private Renderer _render;
 
-    }
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        if (Input.GetKeyDown("c"))
+        void Start()
         {
-            _render.material.color = Color.cyan;
+            _render = GetComponent<Renderer>();
+
         }
-        
+
+
+        // Update is called once per frame
+        void Update()
+        {
+
+            if (Input.GetKeyDown("c"))
+            {
+                _render.material.color = Color.cyan;
+            }
+
+        }
     }
 }
