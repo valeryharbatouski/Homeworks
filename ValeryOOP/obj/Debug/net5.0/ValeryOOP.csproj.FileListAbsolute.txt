@@ -1,0 +1,15 @@
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/bin/Debug/net5.0/ValeryOOP.deps.json
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/bin/Debug/net5.0/ValeryOOP.runtimeconfig.json
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/bin/Debug/net5.0/ValeryOOP.runtimeconfig.dev.json
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/bin/Debug/net5.0/ValeryOOP.dll
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/bin/Debug/net5.0/ref/ValeryOOP.dll
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/bin/Debug/net5.0/ValeryOOP.pdb
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.csproj.AssemblyReference.cache
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.AssemblyInfoInputs.cache
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.AssemblyInfo.cs
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.csproj.CoreCompileInputs.cache
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.dll
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ref/ValeryOOP.dll
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.pdb
+/Users/valerygorbatovsky/Projects/ValeryOOP/ValeryOOP/obj/Debug/net5.0/ValeryOOP.genruntimeconfig.cache
